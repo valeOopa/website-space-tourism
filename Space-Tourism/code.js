@@ -1,12 +1,6 @@
 "use strict";
 const htmlUrl = window.location.href;
 
-if(!(htmlUrl.includes('index')) &&
-    !(htmlUrl.includes('destination')) &&
-    !(htmlUrl.includes('crew')) &&
-    !(htmlUrl.includes('destination')) &&
-    !(htmlUrl.includes('technology'))) window.location.href+= "/index";
-
 const links = document.querySelectorAll(".links-container__links");
 //*Si en la url contiene el mismo id que el link seleccionado, le añadimos el borde al link.
 for (const link of links) {if(htmlUrl.includes(link.id)) {if(window.innerWidth > 500) link.classList.add("active")}};
