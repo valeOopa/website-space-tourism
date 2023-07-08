@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style-crew.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header id="header">
+    <svg xmlns="http://www.w3.org/2000/svg" id="header__icon" width="48" height="48">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24" fill="#FFF" />
+        <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+      </g>
+    </svg>
+    <div id="header__line"></div>
+    <svg id="header__nav-button" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+    <nav id="header__nav">
+      <ul id="nav__links-container">
+        <div id="nav__close-button-container">
+          <svg id="close-button-container__close-button" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        </div>
+        <li class="links-container__links" id="index">
+          <a class="link__a-elements" href="index.html"><span class="satured-numbers">00</span> HOME</a>
+        </li>
+        <li class="links-container__links" id="destination">
+          <a class="link__a-elements" href="destination.html"><span class="satured-numbers">01</span> DESTINATION</a>
+        </li>
+        <li class="links-container__links" id="crew">
+          <a class="link__a-elements" href="crew.html"><span class="satured-numbers">02</span> CREW</a>
+        </li>
+        <li class="links-container__links" id="technology">
+          <a class="link__a-elements" href="technology.html"><span class="satured-numbers">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article id="crew-article">
+    <h2 id="crew-article__crew-text"><span id="crew-text__satured-numbers">02</span>MEET YOUR CREW</h2>
+    <div id="principal-content">
+      <section id="left-zone">
+        <p id="crew-article__role">...</p>
+        <h3 id="crew-article__name">...</h3>
+        <p id="crew-article__description">...</p>
+        <div id="crew-article__selection-section">
+          <label class="selection-section__options-container">
+            <input type="radio" id="option-1" class="options">
+            <span for="option-1" class="span-options"></span>
+          </label>
+          <label class="selection-section__options-container">
+            <input type="radio" id="option-2" class="options">
+            <span for="option-2" class="span-options"></span>
+          </label>
+          <label class="selection-section__options-container">
+            <input type="radio" id="option-3" class="options">
+            <span for="option-3" class="span-options"></span>
+          </label>
+          <label class="selection-section__options-container">
+            <input type="radio" id="option-4" class="options">
+            <span for="option-4" class="span-options"></span>
+          </label>
+        </div>
+      </section>
+      <div id="crew-article__line-divisor"></div>
+      <img id="crew-article__person-image" src="assets/crew/image-douglas-hurley.png" alt="">
+    </div>
+  </article>
+  <script src="code.js"></script>
+</body>

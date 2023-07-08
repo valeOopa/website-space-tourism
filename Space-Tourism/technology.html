@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style-technology.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header id="header">
+    <svg xmlns="http://www.w3.org/2000/svg" id="header__icon" width="48" height="48">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24" fill="#FFF" />
+        <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+      </g>
+    </svg>
+    <div id="header__line"></div>
+    <svg id="header__nav-button" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+    <nav id="header__nav">
+      <ul id="nav__links-container">
+        <div id="nav__close-button-container">
+          <svg id="close-button-container__close-button" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        </div>
+        <li class="links-container__links" id="index">
+          <a class="link__a-elements" href="index.html"><span class="satured-numbers">00</span> HOME</a>
+        </li>
+        <li class="links-container__links" id="destination">
+          <a class="link__a-elements" href="destination.html"><span class="satured-numbers">01</span> DESTINATION</a>
+        </li>
+        <li class="links-container__links" id="crew">
+          <a class="link__a-elements" href="crew.html"><span class="satured-numbers">02</span> CREW</a>
+        </li>
+        <li class="links-container__links" id="technology">
+          <a class="link__a-elements" href="technology.html"><span class="satured-numbers">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article id="technology-article">
+    <h2 id="technology-article__technology-text"><span id="technology-article__saturated__numbers">03</span>SPACE LAUNCH 101</h2>
+    <section id="principal-content">
+      <div id="description-div">
+        <div id="principal-content__options-section">
+          <label class="options-section__options-container">
+            <input type="radio" id="option-1">
+            <span class="options-container__options" for="option-1">1</span>
+          </label>
+        
+          <label class="options-section__options-container">
+            <input type="radio" id="option-2">
+            <span class="options-container__options" for="option-2">2</span>
+          </label>
+        
+          <label class="options-section__options-container">
+            <input type="radio" id="option-3">
+            <span class="options-container__options" for="option-3">3</span>
+          </label>
+        </div>
+        <div id="principal-content__text-section">
+          <p id="text-section__terminology-text">THE TERMINOLOGY...</p>
+          <h3 id="text-section__name">LAUNCH VEHICLE</h3>
+          <p id="text-section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque molestiae sed temporibus. Impedit laboriosam, magni quod magnam sapiente consectetur pariatur in assumenda a ducimus eveniet quaerat veniam dolorem officiis.</p>
+        </div>
+      </div id="description-div">
+      <div id="principal-content__image-section">
+        <img id="image-section__image" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+      </div>
+    </section>
+  </article>
+  <script src="code.js"></script>
+</body>

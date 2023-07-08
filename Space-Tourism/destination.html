@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style-destination.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header id="header">
+    <svg xmlns="http://www.w3.org/2000/svg" id="header__icon" width="48" height="48">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24" fill="#FFF" />
+        <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
+      </g>
+    </svg>
+    <div id="header__line"></div>
+    <svg id="header__nav-button" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+    <nav id="header__nav">
+      <ul id="nav__links-container">
+        <div id="nav__close-button-container">
+          <svg id="close-button-container__close-button" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        </div>
+        <li class="links-container__links" id="index">
+          <a class="link__a-elements" href="index.html"><span class="satured-numbers">00</span> HOME</a>
+        </li>
+        <li class="links-container__links" id="destination">
+          <a class="link__a-elements" href="destination.html"><span class="satured-numbers">01</span> DESTINATION</a>
+        </li>
+        <li class="links-container__links" id="crew">
+          <a class="link__a-elements" href="crew.html"><span class="satured-numbers">02</span> CREW</a>
+        </li>
+        <li class="links-container__links" id="technology">
+          <a class="link__a-elements" href="technology.html"><span class="satured-numbers">03</span> TECHNOLOGY</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <article id="destination-article">
+    <h2 id="destination-article__destination-text"><span id="destination-text__satured-numbers">01</span>PICK YOUR DESTINATION</h2>
+    <div id="left-zone">
+      <section id="destination-article__destination-image-container">
+        <img class="destination-image-container__image" src="assets/destination/image-moon.png" alt="">
+      </section>
+    </div>
+    <div id="right-zone">
+      <section id="destination-article__destination-selection">
+        <button class="destination-selection__destination-button" id="moon">MOON</button>
+        <button class="destination-selection__destination-button" id="mars">MARS</button>
+        <button class="destination-selection__destination-button" id="europa">EUROPA</button>
+        <button class="destination-selection__destination-button" id="titan">TITAN</button>
+      </section>
+      <section id="destination-article__destination-selected">
+        <h3 id="destination-selected__destination-name">MOON</h3>
+        <p id="destination-selected__destination-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, at. Laborum animi dolorum explicabo eos doloremque amet quod sed fugiat. Reiciendis voluptas inventore itaque architecto quis illum nulla culpa cumque.</p>
+      </section>
+      <section id="destination-article__destination-more-description">
+        <p class="destination-more-description__data" id="destination-more-description__destination-size"><span class="destination-more-description__subtitles" id="destination-size__title">AVG. DISTANCE</span><span id="size">322.00 KM</span></p>
+        <p class="destination-more-description__data" id="destination-more-description__destination-travel-time"><span class="destination-more-description__subtitles" id="destination-travel-time__title">EST. TRAVEL TIME</span><span id="duration">3 DAYS</span></p>
+      </section>
+    </div>
+  </article>
+  <script src="code.js"></script>
+</body>

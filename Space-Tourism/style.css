@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Bellefair', serif;*/
+}
+ul{
+    list-style: none;
+}
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #222; 
+}
+::-webkit-scrollbar-track {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+body{
+    min-height: 100vh;
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-position-x: 60%;
+    background-attachment: scroll;
+    overflow-x: hidden;
+}
+#header{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    
+    letter-spacing: 2px;
+    font-size: 16px;
+    
+}
+.link__a-elements{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.satured-numbers{
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin: 0 5px;
+    font-family: 'Barlow Condensed', serif;
+}
+#header__icon{
+    margin-left: 40px;
+}
+#header__line{
+    border-top: 1px solid #ccc4;
+    flex-grow: .8;
+    transform: translate(40px);
+    -webkit-transform: translate(40px);
+    -moz-transform: translate(40px);
+    -ms-transform: translate(40px);
+    -o-transform: translate(40px);
+    z-index: 20;
+}
+#header__nav-button{
+    display: none;
+}
+#header__nav{
+    background: #9991;
+    backdrop-filter: blur(22px);
+    flex-grow: .3;
+    z-index: 10;
+}
+#nav__links-container{
+    display: flex;
+    justify-content: center;
+}
+.links-container__links{
+    display: inline-flex;
+    align-items: center;
+    height: 90px;
+    margin: 0 30px;
+    border-bottom: 3px solid transparent;
+}
+.links-container__links:hover{
+    border-bottom: 3px solid #fff8;
+    box-sizing: content-box;
+}
+.link__a-elements{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.active{
+    border-bottom: 3px solid #fff;
+    box-sizing: content-box;
+}
+@media screen and (max-width: 1000px) {
+    body{
+        background-image: url(assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        background-position-x: none;
+        background-position-y: 50%;
+    }
+    #header{
+        padding: 0;
+        justify-content: space-between;
+    }
+    #header__icon{
+        margin-left: 3vw;
+    }
+    #header__line{
+        display: none;
+    }
+    .links-container__links{
+        margin: 0 1.8vw;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #nav__close-button-container{
+        display: none;
+    }
+    #header__nav{
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-image: url(assets/home/background-home-mobile.jpg);
+        background-size: cover;
+        background-position-x: none;
+        background-position-y: none;
+    }
+    #header{
+        position: relative;
+        padding-top: 2vh;
+    }
+    #header__nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+        text-align: center;
+        
+    }
+    #header__nav-button{
+        display: block;
+        margin-right: 3vw;
+    }
+    #nav__close-button-container{
+        display: flex;
+        width: 70vw;
+        margin-top: 30px;
+        justify-content: right;
+    }
+    #close-button-container__close-button{
+        position: relative;
+        right: 3vw;
+    }
+    #nav__links-container{
+        position: absolute;
+        flex-direction: column;
+        letter-spacing: 4px;
+}
+    .links-container__links{
+        font-size: 1.1em;
+        margin: 0;
+        padding-left: 5vw;
+    }
+    .satured-numbers{
+        font-size: 1em;
+        margin-right: 16px;
+    }
+    .links-container__links:hover{
+        border: none;
+    }
+    .links-container__links:active{
+        background: #888e;
+    }
+    .link__a-elements{
+        padding: 0 10px;
+        width: 100%;
+    }
+}
